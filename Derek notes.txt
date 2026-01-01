@@ -1,0 +1,43 @@
+Derek notes
+
+I agree the zoo data is a good start to create a hypothetical growth curve for known age animals. This should be sex-specific, if possible. 
+Ossicones are a pain, so maybe we minimize that part. Unfortunately, the zoo measurements sometimes included, sometimes excluded them from measurements. Consider this when moving forward.
+1. I would like to always be considering alternate growth curve forms. Could each step compare Gompertz, von Betalanffy, Richards, logistic, polynomial, (etc.?) to find the best-fitting curve?
+2. We should end up with sex-specific curves, but early months have no difference by sex, so some un-sexed data might be helpful. I don't mind excluding whatever data isn't great, so if you think this is not helpful, and want to stick to known-sex animals, then AOK. It is important to be able to highlight where and when sex differences arise in growth curves.
+3. One refinement I'd like to suggest for your consideration is to not be so reliant on the measured size at first sighting to assign ages.
+/For animals with multiple measurements, could you fit a curve to each animal's entire dataset of measurements to get a better age at first sighting/ estimated date of birth? There is a not-insignificant amount of error in these measurements, so wherever possible I'd like to use the entire set of measurements for each animal. Let me know if you want to discuss this.
+4. It is possible that giraffes have indeterminate growth. Can you think of a way to test for this?
+5. t0 should be the same for both sexes, and this should be gestation period, correct? If so, it should be closer to 15 months. 
+6. We could fix some parameters, if you think it's helpful, to help the curve fitting, e.g., gestation period (15 mos) and size at birth (180 cm).
+
+
+
+Checking for indeterminate growth
+1. 
+Check adult-only slopes
+Take only animals older than roughly 6–7 years.
+Fit a simple linear model: y = ax + b + error
+check significance of b
+
+2.
+Choice of model:
+A model that forces a plateau (Gompertz or von Bertalanffy)
+A model that does not force a plateau (log-linear for adult ages, or a generalized additive model)
+
+Does the non-plateau model fit adult data better than a plateau model?
+If the adult segment of the data keeps rising and never levels out, the “no plateau” model will win.
+
+
+
+12/29/2025
+1. I'd like to use the umbilicus animals as a (nearly) known-age set to compare with the zoo animals to establish that the two groups grow the same over the first 2 years to firmly establish that the size at age curve from the zoo animals is adequate. Please make a formal comparison of umbilicus animals and zoo animals over the first 2 years with stats and a figure to present.
+
+X 2. In addition to treating the observations as independent, could you fit a curve for every animal with >1 observation (or >2 ?) and use those individual animal curves in their entirety to estimate age and then combine all the individual curves into a population curve? I did something like this by eye, but want it to be statistically robust, similar to the fish paper I sent a while back. 
+
+X 3. The polynomial curve you used is very interesting to me. Gompertz is great to use for comparison to existing literature and theory, but I fit a quartic polynomial as the best fit to my data. Could you present the polynomial (3 and 4) as well as the gompertz (and others) and compare fits? We will need a formal comparison table to prove which curve is best for each measurement and sex. 
+
+X 4. Please omit the pooled results, only sex-specific results are needed.
+
+X 5. Please look at indeterminate growth by sex, it makes sense that there should be sex difference there also.
+
+X 6. Is it possible to force the curves to have a TH at birth of 180cm? This size at birth (average, SD=17.5) is from literature and zoo data. 

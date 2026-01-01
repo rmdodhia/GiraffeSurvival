@@ -1,0 +1,104 @@
+context,measurement,descriptor,group,model,success,aic,sse,n_obs,message,is_selected,params
+wild_TH_by_sex,TH,total height (TH),F,gompertz,True,7477.825707902284,1839911.1718750922,993,,True,A=421.7; k=0.04695; t0=-14.73
+wild_TH_by_sex,TH,total height (TH),F,logistic,True,7478.599417127368,1841345.3219078425,993,,False,A=420.5; k=0.05339; t0=-8.607
+wild_TH_by_sex,TH,total height (TH),F,richards,True,7479.830534493524,1839920.1149976777,993,,False,A=421.7; k=0.04701; t0=-14.66; nu=0.01
+wild_TH_by_sex,TH,total height (TH),F,von_bertalanffy,True,7477.70430528133,1839686.2409740724,993,,False,A=422.1; k=0.04485; t0=-41.58
+wild_TH_by_sex,TH,total height (TH),M,gompertz,True,4533.146576055021,1748716.3314638017,563,,True,A=500; k=0.02796; t0=-15.41
+wild_TH_by_sex,TH,total height (TH),M,logistic,True,4537.1960312955,1761339.5578737468,563,,False,A=495; k=0.03394; t0=-3.886
+wild_TH_by_sex,TH,total height (TH),M,richards,True,4535.187437317071,1748843.2539315578,563,,False,A=500; k=0.02802; t0=-15.28; nu=0.01
+wild_TH_by_sex,TH,total height (TH),M,von_bertalanffy,True,4531.786340599431,1744496.4473037403,563,,False,A=502.1; k=0.02602; t0=-62.43
+wild_TH_overall,TH,total height (TH),overall,gompertz,True,12794.78090290025,4200121.753178658,1628,,True,A=446.8; k=0.03818; t0=-14.96
+wild_TH_overall,TH,total height (TH),overall,logistic,True,12803.71757594296,4223241.117696779,1628,,False,A=444.2; k=0.04485; t0=-6.892
+wild_TH_overall,TH,total height (TH),overall,richards,True,12796.870722686832,4200353.4880967075,1628,,False,A=446.7; k=0.03825; t0=-14.86; nu=0.01
+wild_TH_overall,TH,total height (TH),overall,von_bertalanffy,True,12791.791189315261,4192415.5873776996,1628,,False,A=447.8; k=0.03602; t0=-48.69
+wild_TH_sex_unknown,TH,total height (TH) (sex unknown),overall,gompertz,True,497.95060994545446,66790.32270667696,72,,True,A=313.1; k=0.149; t0=-7.522
+wild_TH_sex_unknown,TH,total height (TH) (sex unknown),overall,logistic,True,497.96782251743457,66806.29174370176,72,,False,A=309.8; k=0.1738; t0=-5.738
+wild_TH_sex_unknown,TH,total height (TH) (sex unknown),overall,richards,True,499.9507753422843,66790.476136126,72,,False,A=313.1; k=0.1493; t0=-7.502; nu=0.01
+wild_TH_sex_unknown,TH,total height (TH) (sex unknown),overall,von_bertalanffy,True,512.6613698706683,81930.74444444447,72,,False,A=243.4; k=0.1969; t0=-189.6
+wild_avg NI_FBHcm_by_sex,avg NI_FBHcm,foreleg length (avg NI_FBHcm),F,gompertz,True,6508.023825424969,677618.2540041389,997,,True,A=221.5; k=0.04463; t0=-18.72
+wild_avg NI_FBHcm_by_sex,avg NI_FBHcm,foreleg length (avg NI_FBHcm),F,logistic,True,6507.578229033484,677315.4688649407,997,,False,A=221; k=0.04994; t0=-12.69
+wild_avg NI_FBHcm_by_sex,avg NI_FBHcm,foreleg length (avg NI_FBHcm),F,poly3,True,6507.080952294835,675621.0580569749,997,,False,a3=7.547e-05; a2=-0.02341; a1=2.324; a0=145.6
+wild_avg NI_FBHcm_by_sex,avg NI_FBHcm,foreleg length (avg NI_FBHcm),F,richards,True,6509.391184927827,677188.4117103735,997,,False,A=220.5; k=0.05729; t0=-6.099; nu=2.342
+wild_avg NI_FBHcm_by_sex,avg NI_FBHcm,foreleg length (avg NI_FBHcm),F,von_bertalanffy,True,6508.245558595269,677768.9733149015,997,,False,A=221.7; k=0.0429; t0=-46.6
+wild_avg NI_FBHcm_by_sex,avg NI_FBHcm,foreleg length (avg NI_FBHcm),M,gompertz,True,3916.9978949398783,573174.736334265,565,,True,A=255.1; k=0.028; t0=-21.65
+wild_avg NI_FBHcm_by_sex,avg NI_FBHcm,foreleg length (avg NI_FBHcm),M,logistic,True,3919.0553058876676,575265.7198355853,565,,False,A=253.1; k=0.03322; t0=-10.72
+wild_avg NI_FBHcm_by_sex,avg NI_FBHcm,foreleg length (avg NI_FBHcm),M,poly3,True,3913.436921910628,567560.9758749155,565,,False,a3=5.899e-05; a2=-0.01967; a1=2.346; a0=147.6
+wild_avg NI_FBHcm_by_sex,avg NI_FBHcm,foreleg length (avg NI_FBHcm),M,richards,True,3919.0188778486513,573196.0232307832,565,,False,A=255.1; k=0.02805; t0=-21.52; nu=0.01
+wild_avg NI_FBHcm_by_sex,avg NI_FBHcm,foreleg length (avg NI_FBHcm),M,von_bertalanffy,True,3916.2957565824886,572462.8814567458,565,,False,A=255.9; k=0.02631; t0=-67.86
+wild_avg NI_FBHcm_overall,avg NI_FBHcm,foreleg length (avg NI_FBHcm),overall,gompertz,True,11018.8412960041,1381376.7850743453,1634,,True,A=232.1; k=0.03793; t0=-19.12
+wild_avg NI_FBHcm_overall,avg NI_FBHcm,foreleg length (avg NI_FBHcm),overall,logistic,True,11022.645546668447,1384596.6294583045,1634,,False,A=231.1; k=0.04356; t0=-11.49
+wild_avg NI_FBHcm_overall,avg NI_FBHcm,foreleg length (avg NI_FBHcm),overall,poly3,True,10997.80492820172,1362038.5725677733,1634,,False,a3=8.31e-05; a2=-0.02454; a1=2.459; a0=143.9
+wild_avg NI_FBHcm_overall,avg NI_FBHcm,foreleg length (avg NI_FBHcm),overall,richards,True,11020.879203706534,1381408.8324596183,1634,,False,A=232; k=0.03798; t0=-19.04; nu=0.01
+wild_avg NI_FBHcm_overall,avg NI_FBHcm,foreleg length (avg NI_FBHcm),overall,von_bertalanffy,True,11017.582840655368,1380313.3017544185,1634,,False,A=232.4; k=0.03609; t0=-52.54
+wild_avg NI_FBHcm_sex_unknown,avg NI_FBHcm,foreleg length (avg NI_FBHcm) (sex unknown),overall,gompertz,True,410.98705954056123,19960.016777330835,72,,True,A=182.4; k=0.1205; t0=-8.586
+wild_avg NI_FBHcm_sex_unknown,avg NI_FBHcm,foreleg length (avg NI_FBHcm) (sex unknown),overall,logistic,True,410.9990611521072,19963.344170862794,72,,False,A=180.1; k=0.1423; t0=-6.314
+wild_avg NI_FBHcm_sex_unknown,avg NI_FBHcm,foreleg length (avg NI_FBHcm) (sex unknown),overall,poly3,True,412.7682054168994,19899.437615912226,72,,False,a3=0.04477; a2=-1.006; a1=9.075; a0=124.8
+wild_avg NI_FBHcm_sex_unknown,avg NI_FBHcm,foreleg length (avg NI_FBHcm) (sex unknown),overall,richards,True,412.9871761705499,19960.04910980883,72,,False,A=182.4; k=0.1207; t0=-8.559; nu=0.01
+wild_avg NI_FBHcm_sex_unknown,avg NI_FBHcm,foreleg length (avg NI_FBHcm) (sex unknown),overall,von_bertalanffy,True,410.98321270448025,19958.950376475805,72,,False,A=183.3; k=0.1133; t0=-19.22
+wild_avg TOH_NIcm_by_sex,avg TOH_NIcm,neck length (avg TOH_NIcm),F,gompertz,True,35131.16628157602,2685284.1750342343,5708,,True,A=182; k=0.04171; t0=-13.81
+wild_avg TOH_NIcm_by_sex,avg TOH_NIcm,neck length (avg TOH_NIcm),F,logistic,True,35115.22776954697,2677796.4849438723,5708,,False,A=181; k=0.049; t0=-6.432
+wild_avg TOH_NIcm_by_sex,avg TOH_NIcm,neck length (avg TOH_NIcm),F,poly3,True,35164.882841439365,2700246.514472967,5708,,False,a3=7.467e-05; a2=-0.02189; a1=2.177; a0=106.1
+wild_avg TOH_NIcm_by_sex,avg TOH_NIcm,neck length (avg TOH_NIcm),F,richards,True,35115.88231175616,2677165.364139218,5708,,False,A=180.6; k=0.05267; t0=-3.389; nu=1.506
+wild_avg TOH_NIcm_by_sex,avg TOH_NIcm,neck length (avg TOH_NIcm),F,von_bertalanffy,True,35143.6626511701,2691169.434720478,5708,,False,A=182.3; k=0.03955; t0=-44.43
+wild_avg TOH_NIcm_by_sex,avg TOH_NIcm,neck length (avg TOH_NIcm),M,gompertz,True,22412.42965904315,2207832.9608309325,3471,,True,A=214; k=0.03231; t0=-9.593
+wild_avg TOH_NIcm_by_sex,avg TOH_NIcm,neck length (avg TOH_NIcm),M,logistic,True,22427.397724740003,2217374.403052111,3471,,False,A=211.8; k=0.03937; t0=0.6344
+wild_avg TOH_NIcm_by_sex,avg TOH_NIcm,neck length (avg TOH_NIcm),M,poly3,True,22420.37163990763,2211615.771748158,3471,,False,a3=4.633e-05; a2=-0.01829; a1=2.417; a0=103.4
+wild_avg TOH_NIcm_by_sex,avg TOH_NIcm,neck length (avg TOH_NIcm),M,richards,True,22414.566352083522,2207919.910223816,3471,,False,A=214; k=0.03238; t0=-9.472; nu=0.01
+wild_avg TOH_NIcm_by_sex,avg TOH_NIcm,neck length (avg TOH_NIcm),M,von_bertalanffy,True,22408.08960529269,2205074.0655277204,3471,,False,A=214.9; k=0.03; t0=-50.5
+wild_avg TOH_NIcm_overall,avg TOH_NIcm,neck length (avg TOH_NIcm),overall,gompertz,True,60380.96844975517,5695762.968007889,9428,,True,A=190.6; k=0.04088; t0=-11.02
+wild_avg TOH_NIcm_overall,avg TOH_NIcm,neck length (avg TOH_NIcm),overall,logistic,True,60396.41897073334,5705104.785305787,9428,,False,A=189.4; k=0.04855; t0=-3.234
+wild_avg TOH_NIcm_overall,avg TOH_NIcm,neck length (avg TOH_NIcm),overall,poly3,True,60428.99006506387,5723634.099497187,9428,,False,a3=7.164e-05; a2=-0.02243; a1=2.379; a0=103
+wild_avg TOH_NIcm_overall,avg TOH_NIcm,neck length (avg TOH_NIcm),overall,richards,True,60383.0039947896,5695784.441965509,9428,,False,A=190.6; k=0.04095; t0=-10.93; nu=0.01
+wild_avg TOH_NIcm_overall,avg TOH_NIcm,neck length (avg TOH_NIcm),overall,von_bertalanffy,True,60381.39953032254,5696023.4038231,9428,,False,A=191; k=0.03854; t0=-42.6
+wild_avg TOH_NIcm_sex_unknown,avg TOH_NIcm,neck length (avg TOH_NIcm) (sex unknown),overall,gompertz,True,1463.9674888636303,86920.05058994064,249,,True,A=163.5; k=0.08189; t0=-5.35
+wild_avg TOH_NIcm_sex_unknown,avg TOH_NIcm,neck length (avg TOH_NIcm) (sex unknown),overall,logistic,True,1464.3686090354558,87060.18506168149,249,,False,A=160.8; k=0.1033; t0=-1.4
+wild_avg TOH_NIcm_sex_unknown,avg TOH_NIcm,neck length (avg TOH_NIcm) (sex unknown),overall,poly3,True,1465.688818929667,86822.82787625538,249,,False,a3=0.002078; a2=-0.1547; a1=5.105; a0=85.19
+wild_avg TOH_NIcm_sex_unknown,avg TOH_NIcm,neck length (avg TOH_NIcm) (sex unknown),overall,richards,True,1465.9715624748585,86921.47260355667,249,,False,A=163.5; k=0.0821; t0=-5.302; nu=0.01
+wild_avg TOH_NIcm_sex_unknown,avg TOH_NIcm,neck length (avg TOH_NIcm) (sex unknown),overall,von_bertalanffy,True,1463.8312512491614,86872.50624703843,249,,False,A=164.7; k=0.07492; t0=-21.75
+wild_avg TOO_TOHcm_by_sex,avg TOO_TOHcm,ossicone length (avg TOO_TOHcm),F,gompertz,True,29717.060916477967,1061063.621415616,5681,,True,A=26.85; k=0.0002659; t0=-2625
+wild_avg TOO_TOHcm_by_sex,avg TOO_TOHcm,ossicone length (avg TOO_TOHcm),F,logistic,True,29717.03111607471,1061058.0554869303,5681,,False,A=18.22; k=0.001132; t0=-1910
+wild_avg TOO_TOHcm_by_sex,avg TOO_TOHcm,ossicone length (avg TOO_TOHcm),F,poly3,True,29711.171474191662,1059591.1007017975,5681,,False,a3=2.504e-06; a2=-0.0008359; a1=0.068; a0=15.35
+wild_avg TOO_TOHcm_by_sex,avg TOO_TOHcm,ossicone length (avg TOO_TOHcm),F,richards,True,29719.065823298166,1061064.537882904,5681,,False,A=38.3; k=0.0001852; t0=934.5; nu=0.7433
+wild_avg TOO_TOHcm_by_sex,avg TOO_TOHcm,ossicone length (avg TOO_TOHcm),F,von_bertalanffy,True,29713.08170096047,1060320.6672759394,5681,,False,A=16.65; k=0.06391; t0=-57.99
+wild_avg TOO_TOHcm_by_sex,avg TOO_TOHcm,ossicone length (avg TOO_TOHcm),M,gompertz,True,18535.72259869051,744797.832894169,3447,,True,A=22.22; k=0.05869; t0=-13
+wild_avg TOO_TOHcm_by_sex,avg TOO_TOHcm,ossicone length (avg TOO_TOHcm),M,logistic,True,18535.148802682117,744673.8623529195,3447,,False,A=22.18; k=0.06698; t0=-8.005
+wild_avg TOO_TOHcm_by_sex,avg TOO_TOHcm,ossicone length (avg TOO_TOHcm),M,poly3,True,18539.766936219017,745239.6866119991,3447,,False,a3=7.485e-06; a2=-0.002538; a1=0.2536; a0=14.61
+wild_avg TOO_TOHcm_by_sex,avg TOO_TOHcm,ossicone length (avg TOO_TOHcm),M,richards,True,18534.77081753443,744160.3106542878,3447,,False,A=22.01; k=0.2931; t0=20.64; nu=22.03
+wild_avg TOO_TOHcm_by_sex,avg TOO_TOHcm,ossicone length (avg TOO_TOHcm),M,von_bertalanffy,True,18535.93664538749,744844.0836820751,3447,,False,A=22.24; k=0.056; t0=-34.55
+wild_avg TOO_TOHcm_overall,avg TOO_TOHcm,ossicone length (avg TOO_TOHcm),overall,gompertz,True,49894.88983894782,1918055.6152309435,9376,,True,A=18.42; k=0.07895; t0=-18.97
+wild_avg TOO_TOHcm_overall,avg TOO_TOHcm,ossicone length (avg TOO_TOHcm),overall,logistic,True,49893.99255752718,1917872.0664555023,9376,,False,A=18.42; k=0.08404; t0=-16.48
+wild_avg TOO_TOHcm_overall,avg TOO_TOHcm,ossicone length (avg TOO_TOHcm),overall,poly3,True,49891.823503886,1917019.4710915554,9376,,False,a3=7.56e-06; a2=-0.002043; a1=0.1569; a0=15.07
+wild_avg TOO_TOHcm_overall,avg TOO_TOHcm,ossicone length (avg TOO_TOHcm),overall,richards,True,49890.979643289524,1916846.9428920725,9376,,False,A=18.4; k=0.8574; t0=19.05; nu=100
+wild_avg TOO_TOHcm_overall,avg TOO_TOHcm,ossicone length (avg TOO_TOHcm),overall,von_bertalanffy,True,49895.15521714322,1918109.90462316,9376,,False,A=18.41; k=0.07891; t0=-33.28
+wild_avg TOO_TOHcm_sex_unknown,avg TOO_TOHcm,ossicone length (avg TOO_TOHcm) (sex unknown),overall,gompertz,True,1409.5684288262623,71180.83304831179,248,,True,A=19.13; k=0.8121; t0=-0.675
+wild_avg TOO_TOHcm_sex_unknown,avg TOO_TOHcm,ossicone length (avg TOO_TOHcm) (sex unknown),overall,logistic,True,1409.5489361647153,71175.23849444017,248,,False,A=19.16; k=0.8522; t0=-0.4336
+wild_avg TOO_TOHcm_sex_unknown,avg TOO_TOHcm,ossicone length (avg TOO_TOHcm) (sex unknown),overall,poly3,True,1411.1562351226514,71062.62368591613,248,,False,a3=0.004165; a2=-0.198; a1=2.218; a0=12.9
+wild_avg TOO_TOHcm_sex_unknown,avg TOO_TOHcm,ossicone length (avg TOO_TOHcm) (sex unknown),overall,richards,True,1411.1988063513277,71074.82321361886,248,,False,A=19.57; k=7.008; t0=4.232; nu=97.15
+wild_avg TOO_TOHcm_sex_unknown,avg TOO_TOHcm,ossicone length (avg TOO_TOHcm) (sex unknown),overall,von_bertalanffy,True,1409.5749340948298,71182.7002116545,248,,False,A=19.12; k=0.7999; t0=-2.13
+wild_th_alignment_by_sex,TH,total height (TH),F,gompertz,True,7592.762676893925,2065690.3773018788,993,,True,A=415.9; k=0.05429; t0=-13.4
+wild_th_alignment_by_sex,TH,total height (TH),F,logistic,True,7592.270446435009,2064666.667582812,993,,False,A=415.2; k=0.06114; t0=-8.207
+wild_th_alignment_by_sex,TH,total height (TH),F,richards,True,7594.218079972265,2064557.788993378,993,,False,A=414.9; k=0.0646; t0=-5.986; nu=1.493
+wild_th_alignment_by_sex,TH,total height (TH),F,von_bertalanffy,True,7593.06606482691,2066321.5971217358,993,,False,A=416.2; k=0.05206; t0=-36.47
+wild_th_alignment_by_sex,TH,total height (TH),M,gompertz,True,4556.878022850557,1824003.4159021524,563,,True,A=494.9; k=0.02962; t0=-15.06
+wild_th_alignment_by_sex,TH,total height (TH),M,logistic,True,4560.489863808584,1835742.6480463762,563,,False,A=490.6; k=0.03576; t0=-4.201
+wild_th_alignment_by_sex,TH,total height (TH),M,richards,True,4558.914747966074,1824122.4015522595,563,,False,A=494.8; k=0.02968; t0=-14.93; nu=0.01
+wild_th_alignment_by_sex,TH,total height (TH),M,von_bertalanffy,True,4555.651346084234,1820033.563566489,563,,False,A=496.7; k=0.02763; t0=-59.32
+wild_th_alignment_overall,TH,total height (TH),overall,gompertz,True,12932.258140291986,4570209.248311349,1628,,True,A=439.7; k=0.04333; t0=-13.78
+wild_th_alignment_overall,TH,total height (TH),overall,logistic,True,12939.138510911072,4589565.06780654,1628,,False,A=437.9; k=0.05045; t0=-6.746
+wild_th_alignment_overall,TH,total height (TH),overall,richards,True,12934.32682483603,4570402.067328671,1628,,False,A=439.7; k=0.0434; t0=-13.71; nu=0.01
+wild_th_alignment_overall,TH,total height (TH),overall,von_bertalanffy,True,12929.978892364325,4563815.297722524,1628,,False,A=440.5; k=0.04102; t0=-43.35
+zoo_height_cm_by_sex,height_cm,Zoo juvenile height,F,gompertz,True,126.59601773426716,6549.801015658128,21,,True,A=451.1; k=0.04975; t0=-1.866
+zoo_height_cm_by_sex,height_cm,Zoo juvenile height,F,logistic,True,128.10508205575076,7037.794752267416,21,,False,A=445.2; k=0.06565; t0=5.422
+zoo_height_cm_by_sex,height_cm,Zoo juvenile height,F,poly3,True,127.39129401167342,6184.6280931440815,21,,False,a3=0.0005244; a2=-0.1344; a1=9.721; a0=178.9
+zoo_height_cm_by_sex,height_cm,Zoo juvenile height,F,richards,True,128.60889361862448,6553.818174707458,21,,False,A=451; k=0.04989; t0=-1.775; nu=0.01
+zoo_height_cm_by_sex,height_cm,Zoo juvenile height,F,von_bertalanffy,True,126.20466386196276,6428.8699172910565,21,,False,A=452.9; k=0.045; t0=-29.59
+zoo_height_cm_by_sex,height_cm,Zoo juvenile height,M,gompertz,True,328.8579809291847,17866.32220718451,56,,False,A=486.5; k=0.04515; t0=-3.673
+zoo_height_cm_by_sex,height_cm,Zoo juvenile height,M,logistic,True,337.7292970589718,20933.14649220603,56,,False,A=479.7; k=0.05699; t0=4.172
+zoo_height_cm_by_sex,height_cm,Zoo juvenile height,M,poly3,True,308.6499817184504,12017.285663919834,56,,True,a3=0.0007574; a2=-0.1571; a1=10.43; a0=203.3
+zoo_height_cm_by_sex,height_cm,Zoo juvenile height,M,richards,True,330.96111604904405,17899.25690580981,56,,False,A=486.5; k=0.04526; t0=-3.579; nu=0.01
+zoo_height_cm_by_sex,height_cm,Zoo juvenile height,M,von_bertalanffy,True,325.23022450221464,16745.610010708435,56,,False,A=489.7; k=0.04125; t0=-33.7
+zoo_height_cm_overall,height_cm,Zoo juvenile height,overall,gompertz,True,474.5533067247996,33823.57425074308,77,,True,A=479.4; k=0.04203; t0=-3.841
+zoo_height_cm_overall,height_cm,Zoo juvenile height,overall,logistic,True,481.1568910296169,36852.33042739245,77,,False,A=474.4; k=0.05359; t0=4.727
+zoo_height_cm_overall,height_cm,Zoo juvenile height,overall,poly3,True,475.6480245938928,33428.24200235419,77,,False,a3=0.0001117; a2=-0.05073; a1=6.923; a0=206.2
+zoo_height_cm_overall,height_cm,Zoo juvenile height,overall,richards,True,476.6249279772198,33855.04975375479,77,,False,A=479.3; k=0.04214; t0=-3.737; nu=0.01
+zoo_height_cm_overall,height_cm,Zoo juvenile height,overall,von_bertalanffy,True,472.10390888739437,32764.567124726364,77,,False,A=481.2; k=0.03849; t0=-36.1
