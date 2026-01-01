@@ -1,13 +1,13 @@
 
-```
-mermaid
-
+```mermaid
 flowchart TD
   A([Start]) --> B["Run python growth_analyses.py"]
   B --> C["growth_analyses.py: cli()"]
-  C --> D["Parse command-line arguments"]
+  C --> C1["Key CLI switches:\n--age-strategy {mixed_effects|first_measurement}\n--skip-zoo-overall | --skip-zoo-by-sex\n--skip-wild-overall | --skip-wild-by-sex\n--outputs-dir PATH | --graphs-dir PATH"]
+  C1 --> D["Parse command-line arguments"]
   D --> E["Create AnalysisConfig"]
-  E --> F["pipeline.py: main(config)"]
+  E --> E1["Set birth_height_mode + measurement set\n(get_measurements_for_config)\nModel candidates: gompertz, logistic, von_bertalanffy, richards, poly3, poly4\nConstraint mode: fixed_y0 | constrained | unconstrained"]
+  E1 --> F["pipeline.py: main(config)"]
 
   F --> G["Load zoo data (data.py: load_prepare_zoo)"]
 
@@ -44,7 +44,8 @@ flowchart TD
   R4 --> S
   R5 --> S
 
-  S --> T{"fit_wild_overall?"}
+  S --> S0["fit_growth_models calls models.py: select_best_model\nAIC-ranked across chosen candidates; prefer Gompertz if within 1% AIC\nBirth-height mode sets whether y0 is fixed, bounded, or free"]
+  S0 --> T{"fit_wild_overall?"}
   T -- "Yes" --> T1["For each measurement in MEASUREMENTS:\nFit overall curve + report + plot\n(plotting.py: plot_growth_curve_overall)"]
   T -- "No" --> T2["Skip wild overall fits"]
   T1 --> U["Continue"]
@@ -63,4 +64,14 @@ flowchart TD
   W --> X["Always attempt: fit TH by VTB_Umb_Flag (Umb=0 vs Umb>0)\nmin_points=5\nReport + plot (plot_growth_curve_by_group)"]
   X --> Y{"Any TH-by-umbilicus fit succeeded?"}
   Y -- "Yes" --> Y1["Save group plot\n(plot_growth_curve_by_group)"]
-  Y1 --> Y2["Save per-individual]()
+  Y1 --> Y2["Save per-individual trajectories for Umb>0"]
+  Y -- "No" --> Y3["Skip Umb plots"]
+
+  Y2 --> Z["Write Outputs:\n- wild_with_age_estimates_*.csv\n- model_fit_diagnostics.csv"]
+  Y3 --> Z
+  Z --> AB{"Run indeterminate growth analysis?"}
+  AB -- "Yes" --> AB1["check_indeterminate_growth.py\nUse Data/zoo.csv + wild_with_age_estimates_*\nAdults >= 10y: fit linear slope by sex\nOutputs: indeterminate_growth_results.csv + indeterminate_growth_report.md"]
+  AB -- "No" --> AA([End])
+  AB1 --> AA
+
+```
