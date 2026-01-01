@@ -1,18 +1,21 @@
 # Giraffe Growth Analysis (Modular)
 
-This repository now provides a modular package, `giraffesurvival`, that estimates giraffe growth curves from zoo and wild measurements. The previous monolithic script has been split into clear modules so you can follow and tweak the analysis more easily.
+This repo contains a modular package, `giraffesurvival`, for estimating giraffe growth curves from zoo and wild measurements. It includes the original population pipeline plus an individual-level track that fits per-animal Gompertz curves (y0 fixed at 180 cm by default) and aggregates them.
+
+## Study Questions This Analysis Addresses
+
+- Infer ages of wild animals by leveraging zoo calves with known ages to map height-to-age, then back-estimate wild ages and growth trajectories.
+- Quantify sex differences in growth curves across morphological measures (total height, neck length, foreleg length, ossicone length).
+- Test for sex differences in indeterminate growth (continued growth after maturity).
+- Assess whether calves with a visible umbilicus grow the same as other newborns, and whether wild calves with an umbilicus match zoo calves through ~48 months.
+- Compare curve families (Gompertz, logistic, von Bertalanffy, Richards, poly3, poly4) to capture plausible growth shapes and select appropriate forms.
 
 ## What the analysis does
 
-- Imports zoo data (known ages) and tests several candidate growth curves
-	(Gompertz, logistic, von Bertalanffy, Richards, and a cubic polynomial).
-- Imports wild field data (unknown exact ages) and assigns ages in two stages:
-	1. Uses zoo curves to back-calculate the age at first sighting.
-	2. Refines each animal’s age trajectory by aligning all of its total-height
-		 measurements to the best population curve (mixed-effects style).
-- Fits and plots growth curves for each wild measurement, both overall and by sex
-	(optional via configuration).
-- Saves updated wild data with the new age estimates plus PNG plots for each curve.
+- Population pipeline: fits candidate curves (Gompertz, logistic, von Bertalanffy, Richards, poly3, poly4) to zoo data (known ages) and wild data (estimated ages); supports overall and sex-specific fits.
+- Age assignment for wild: seeds ages from classes, then refines by aligning repeated TH measurements to population curves (mixed-effects style).
+- Individual-level track: fits Gompertz per animal (≥4 obs), compares y0-free vs y0-fixed (180 cm), and aggregates fixed-y0 medians for population Option A; Option B refines ages using individual curves.
+- Outputs plots and CSVs for both the population pipeline and the individual-level analysis.
 
 ## Data Required
 
@@ -36,25 +39,29 @@ This project uses `numpy`, `pandas`, `scipy`, and `matplotlib`.
 
 ## Running the Analysis
 
-From the project directory:
-
-Option 1 — quick start (use the wrapper):
+Population pipeline (wrapper):
 
 ```bash
 python growth_analyses.py
 ```
 
-Option 2 — run the package entry point:
+Population pipeline (module entry point):
 
 ```bash
 python -m giraffesurvival
 ```
 
-The pipeline prints progress messages and writes outputs to:
+Individual-level track (fits per-animal Gompertz, y0 fixed at 180 cm, regenerates comparison plots):
 
-- `Graph/` – PNG plots of growth curves (overall and by sex).
-- `wild_with_age_estimates_sex_agnostic_then_by_sex.csv` – the wild dataset with
-	refined ages.
+```bash
+python growth_analyses_individual_level.py
+```
+
+Key outputs:
+
+- `Graph/` – population growth curve PNGs (overall and by sex).
+- `wild_with_age_estimates_sex_agnostic_then_by_sex.csv` – wild data with refined ages.
+- `Outputs/individual_level_analysis/` – per-animal fits (y0-free and y0-fixed), aggregated Option A/B comparisons, and plots including `population_curve_comparison.png`.
 
 ### Example Variations
 

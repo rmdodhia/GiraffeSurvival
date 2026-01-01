@@ -1,10 +1,41 @@
-# Python-generated files
+# Python
 __pycache__/
-*.py[oc]
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# Environments
+.venv/
+venv/
+ENV/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Build / dist
 build/
 dist/
 wheels/
-*.egg-info
 
-# Virtual environments
-.venv
+# Logs / cache
+*.log
+*.tmp
+.cache/
+
+# Data/outputs (regenerate)
+Graph/
+Outputs/
+model_fit_diagnostics.csv
+wild_with_age_estimates_sex_agnostic_then_by_sex.csv
+Outputs/individual_level_analysis/*.csv
+Outputs/individual_level_analysis/*.png
+
+# Local config
+*.env
+.python-version
